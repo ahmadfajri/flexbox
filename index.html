@@ -5,6 +5,7 @@
   <title>Flexbox</title>
 
   <style>
+    /* Flex Container */
     .container {
       display: flex;
 
@@ -24,6 +25,34 @@
       margin: 5px;
       border: 2px solid black;
       border-radius: 10px;
+      text-align: center;
+      font-size: 25px;
+      font-weight: bold;
+      line-height: 250px;
+    }
+
+    /* Flex Grow */
+    .boxx {
+      background-color: #FBDD1C;
+      margin: 5px;
+      border: 2px solid black;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 25px;
+      font-weight: bold;
+      line-height: 250px;
+    }
+
+    .first {
+      flex-grow: 1;
+    }
+
+    .second {
+      flex-grow: 2;
+    }
+
+    .third {
+      flex-grow: 1;
     }
   </style>
 </head>
@@ -31,10 +60,19 @@
 <body>
   <h2>Flex Container</h2>
   <div class="container">
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
+    <div class="box">flex-grow: 1;</div>
+    <div class="box">flex-grow: 1;</div>
+    <div class="box">flex-grow: 1;</div>
   </div>
+
+  <br><br>
+  <h2>Flex Grow</h2>
+  <div class="container">
+    <div class="boxx first">flex-grow: 1;</div>
+    <div class="boxx second">flex-grow: 2;</div>
+    <div class="boxx third">flex-grow: 1;</div>
+  </div>
+
 </body>
 
 </html>
