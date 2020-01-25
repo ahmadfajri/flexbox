@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Flex Grow</title>
+
+  <style>
+    /* Flex Container */
+    .container {
+      display: flex;
+
+      width: 800px;
+      height: 250px;
+      background-color: #11c5c6;
+      border: 2px solid black;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 0 auto;
+    }
+
+    .box {
+      background-color: #fbdd1c;
+      margin: 5px;
+      border: 2px solid black;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .first {
+      flex-grow: 1;
+    }
+
+    .second {
+      flex-grow: 2;
+    }
+
+    .third {
+      flex-grow: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Flex Grow</h2>
+  <div class="container">
+    <div class="box first">flex-grow: 1;</div>
+    <div class="box second">flex-grow: 2;</div>
+    <div class="box third">flex-grow: 1;</div>
+  </div>
+</body>
+
+</html>

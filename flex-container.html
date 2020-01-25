@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Flex Container</title>
+
+
+  <style>
+    /* Flex Container */
+    .container {
+      display: flex;
+
+      width: 800px;
+      height: 250px;
+      background-color: #11c5c6;
+      border: 2px solid black;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 0 auto;
+    }
+
+    .box {
+      flex-grow: 1;
+
+      background-color: #fbdd1c;
+      margin: 5px;
+      border: 2px solid black;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 25px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Flex Container</h2>
+  <div class="container">
+    <div class="box">flex-grow: 1;</div>
+    <div class="box">flex-grow: 1;</div>
+    <div class="box">flex-grow: 1;</div>
+  </div>
+</body>
+
+</html>
